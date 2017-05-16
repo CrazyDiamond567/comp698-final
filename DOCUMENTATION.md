@@ -53,5 +53,20 @@ We want to set the tests up first because we want to know if the tests work befo
 ![](/images/test.PNG)
 1. Push changes up to github using instructions from pull requests.
 
+#### Add in the first webpage
+
+#### Log in to your AWS server
+AWS allows you to rent hardware clock cycles. Once we have something that we are happy with, we are going to launch it on the web.
+This is the deployment phase of the cycle.
+Your professor should have given you your IP address and key at this point
+
+1. Get cmder for bash shell, or linux. You need one or the other.
+1. 
+
+#### Configure Ansible
+
+#### Finish your project
+
+
 
 
