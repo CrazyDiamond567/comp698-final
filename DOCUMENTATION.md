@@ -71,6 +71,7 @@ Your professor should have given you your IP address and key at this point.
 #### Configure Ansible
 Ansible is a useful little peice of software which essentially operates as a macro. An ansible playbook can be used to instantly run multiple commands with variables.
 
+1. Create the ansible related folders in your git repository. These were provided by my professor and had to be fixed.
 1. Do "ansible-playbook configure-host.yml -v --extra-vars "student_username=xxxxxxx""
 1. Do "ansible-playbook deploy-website-production.yml -v"
 1. Do "ansible-playbook deploy-website-staging.yml -v"
