@@ -79,8 +79,15 @@ Ansible is a useful little peice of software which essentially operates as a mac
 1. Do "ansible-playbook deploy-website-staging.yml -v"
 
 #### Configure Prometheus Metrics
+These website metrics can show useful information.
+
+1.
 
 #### Finish your project
+1. Add a pull request for your second page
+1. create a template for your second page
+1. Add a pull request for your third page
+1. create a template for your third page
 
 
 
