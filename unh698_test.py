@@ -25,12 +25,10 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/boring1')  
         # Replace UNH698 Website with the text you expect to see on you topic page
         assert b'boring1' in rv.data
-    """
     def test_my_topic_2(self):
         # Replace '/' with the page path you want to make
         rv = self.app.get('/boring2')  
         # Replace UNH698 Website with the text you expect to see on you topic page
         assert b'boring2' in rv.data
-    """
 if __name__ == '__main__':
     unittest.main()
