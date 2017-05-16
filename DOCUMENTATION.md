@@ -34,5 +34,24 @@ This works because of the way branches work in github. Its like the branches of 
 1. Add all the files to git "git add *"
 1. create a commit "git commit -m "your message""
 1. Enter the following command "git push origin builddocker"
+1. Create a pull request
+![a](/images/Pull_Request)
+
+#### Set up the Docker Virtual Machine and Unit Tests
+We may have set up the docker cloud, but we need to give docker its instructions to build an enviorment.
+We should also set some tests up so we know whether our program works.
+We want to set the tests up first because we want to know if the tests work before we do the actual code.
+
+1. Make certain you are on your new branch.
+1. Create the dockerfile, which sets up the virtual machine enviornment. Its contents are as follows.
+![](/images/Dockerfile.PNG)
+1. Create docker-compose.test.yml. Contents are as follows.
+![](/images/Compose.PNG)
+1. Create run_test.sh. Contents are as follows
+![](/images/Run_Tests.PNG)
+1. Create the python file which actually contains the unit tests. Contents are as follows
+![](/images/test.PNG)
+1. Push changes up to github using instructions from pull requests.
+
 
 
