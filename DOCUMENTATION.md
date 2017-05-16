@@ -13,9 +13,9 @@ Github allows one to always have a safe backup of code, to easily revert bad cha
 	1. Instead of README.md, your first two initialized files should be DOCUMENTATION.md and CHANGELOG.md
 ![Follow these instructions to initialize your new repository](/images/new_repository_instructions.PNG)
 
-#### Docker Setup
+#### Docker Cloud Setup
 Docker is our Unit-Testing and Enviornment software. Because programs often run differently on different OS's; it helps to have an enviornment which you control completely. Docker allows this by creating a virtual machine.
-Docker can also be configured to automatically test new code as you upload it to github.
+We are using something called docker cloud which does this over the internet. It can also be configured to automatically test new code as you upload it to github.
 
 1. Make a docker cloud account, or login to one that already exists
 1. Create a new repository, and connect it to your github repository
@@ -54,16 +54,26 @@ We want to set the tests up first because we want to know if the tests work befo
 1. Push changes up to github using instructions from pull requests.
 
 #### Add in the first webpage
+This is where you add the code for your website. Since I am using flask, that is what I have directions for.
+
 
 #### Log in to your AWS server
 AWS allows you to rent hardware clock cycles. Once we have something that we are happy with, we are going to launch it on the web.
 This is the deployment phase of the cycle.
-Your professor should have given you your IP address and key at this point
+Your professor should have given you your IP address and key at this point.
 
 1. Get cmder for bash shell, or linux. You need one or the other.
-1. 
+1. download your key and put it somewhere easy to find
+1. Do "chmod 600 your key file"
+1. Do "ssh -i your key file username@ip-address"
+1. You should now be inside your server
 
 #### Configure Ansible
+Ansible is a useful little peice of software which essentially operates as a macro. An ansible playbook can be used to instantly run multiple commands with variables.
+
+1. Do "ansible-playbook configure-host.yml -v --extra-vars "student_username=xxxxxxx""
+1. Do "ansible-playbook deploy-website-production.yml -v"
+1. Do "ansible-playbook deploy-website-staging.yml -v"
 
 #### Finish your project
 
