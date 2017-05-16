@@ -55,6 +55,9 @@ We want to set the tests up first because we want to know if the tests work befo
 
 #### Add in the first webpage
 This is where you add the code for your website. Since I am using flask, that is what I have directions for.
+1. Create a folder named "templates"
+1. Create a file named unh698.py. Contents
+
 
 
 #### Log in to your AWS server
@@ -75,6 +78,8 @@ Ansible is a useful little peice of software which essentially operates as a mac
 1. Do "ansible-playbook configure-host.yml -v --extra-vars "student_username=xxxxxxx""
 1. Do "ansible-playbook deploy-website-production.yml -v"
 1. Do "ansible-playbook deploy-website-staging.yml -v"
+
+#### Configure Prometheus Metrics
 
 #### Finish your project
 
