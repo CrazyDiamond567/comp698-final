@@ -57,7 +57,7 @@ We want to set the tests up first because we want to know if the tests work befo
 This is where you add the code for your website. Since I am using flask, that is what I have directions for.
 1. Create a folder named "templates"
 1. Create a file named unh698.py. Contents
-![a](/images/unh698.py)
+![a](/images/unh698.PNG)
 
 #### Log in to your AWS server
 AWS allows you to rent hardware clock cycles. Once we have something that we are happy with, we are going to launch it on the web.
